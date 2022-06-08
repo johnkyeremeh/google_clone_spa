@@ -3,9 +3,9 @@
 ## Problem
 As part of this take home exercise, you'll get to work with and see some of the some pieces of the Rocketplace technical stack, while building a Single Page Application (SPA) in React (with Django serving as the API back end).
 
-We hope you can spend a total of about 2.5 or 3 hours on this project (which includes about 30 minutes for setting up the environment).  This is not a hard limit (but a reasonable boundary) and you do *not* have to do this in 3 hours straight - you have a life that we respect.
+The amount of time you spend on this assignment is up to you.  We don't have a hard limit, although for your own balance we recommend maybe 2.5-3 hours (which includes about 30 min to set up the enviornment).  You do *not* have to do this in 3 hours straight =).  You have a life that we respect.    
 
-If you are able to finish this faster, great! Feel free to polish the application in any way you see fit in the remaining time available :)
+Feel free to include any flourishes or polish in this code that you feel demonstrate who you are as an engineer and the kind of work you do.   We've deliberately left the support libraries open to choice for this reason.  
 
 ### Tasks
 - Build a simple interface similar to Google Search
