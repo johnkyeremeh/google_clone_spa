@@ -128,3 +128,5 @@ local_settings.py
 .python-version
 
 
+#keys
+front-end/keys.js

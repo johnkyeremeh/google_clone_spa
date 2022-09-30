@@ -1,15 +1,28 @@
 import React, {useState} from "react";
 import Search from "../components/search"
+import { connect } from "react-redux";
 
-
-function SearchResult(){
+function SearchResult(props){
     const [showButton, setShowButtons] = useState(false)
-    
+
         return (
         <div className="searchResult">
-           < Search />
+           < Search term={props.search.term}/>
+           {props.search.term}
+           <div className="searchResults--results">
 
-    </div>)   
+           </div>
+
+        </div>)   
 } 
 	
-export default SearchResult;
+
+const mapStatetoProps = (state) => {
+    return {
+      search: state.search,
+      searchButtons: state.searchButtons
+    }
+  }
+
+  
+export default connect(mapStatetoProps)(SearchResult);

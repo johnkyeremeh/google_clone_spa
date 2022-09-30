@@ -26,7 +26,7 @@ function Search(props){
     <form>
         <div className="search">
             <div className="search--searchInput">
-                <input  onChange={onChange}/>
+                <input  onChange={onChange} placeholder={props.term}/>
             </div>
         </div>
         {props.searchButtons ? (
