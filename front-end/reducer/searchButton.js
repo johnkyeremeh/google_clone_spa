@@ -1,10 +1,13 @@
 
-export default function searchButtons(state = null
+import { SHOW_SEARCH_BUTTONS, HIDE_SEARCH_BUTTONS } from "../actions/searchButtons";
+
+
+export default function searchReducer(state = true
     , action) {  switch(action.type) {
-        case "SEARCH_VIEW":
+        case SHOW_SEARCH_BUTTONS:
             return true 
-        case "SEARCH_RESULT_VIEW": //create this
-            return null ;
+        case HIDE_SEARCH_BUTTONS: 
+            return false ;
         default:
           return state;
       }
