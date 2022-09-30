@@ -1,16 +1,20 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import { connect } from "react-redux";
 import Button from '@mui/material/Button';
 import '../css/search.css'
-
-function Search(){
+import { setSearchTerm } from "../actions/search";
+import { hideSearchBtn } from "../actions/searchButtons";
+function Search(props){
     const [input, setInput] = useState('')
     const navigate = useNavigate();
     
     const getSearch = (e) =>{
         e.preventDefault()
         console.log("Search")
+        props.setSearchTerm(input)
         navigate("/search");
+        props.hideSearchBtn()
     }
 
     const onChange = (e) =>{
@@ -25,11 +29,13 @@ function Search(){
                 <input  onChange={onChange}/>
             </div>
         </div>
-
-        <div className="search--button">
+        {props.searchButtons ? (
+            <div className="search--button">
             <Button onClick={getSearch}variant="outlined" type="submit">Google Search</Button>
             <Button variant="outlined" type="submit">I'm Feeling Lucky</Button>
-        </div>
+         </div>
+        ) : null }
+        
     </form>
 
     )
@@ -37,7 +43,14 @@ function Search(){
 
 }
 
-export default Search
+const mapStatetoProps = (state) => {
+  return {
+    search: state.search,
+    searchButtons: state.searchButtons
+  }
+}
+
+export default connect(mapStatetoProps, {setSearchTerm, hideSearchBtn})(Search)
 
 
 
