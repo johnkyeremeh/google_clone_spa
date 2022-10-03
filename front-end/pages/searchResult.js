@@ -6,8 +6,7 @@ import { connect } from "react-redux";
 import '../css/searchResults.css'
 
 function SearchResult(props){
-    const [showButton, setShowButtons] = useState(false)
-
+  
     const data = props.search.data
     const term = props.search.term
 
@@ -35,9 +34,7 @@ function SearchResult(props){
                     {data?.items.map((item, index) => {
                         return (
                             <div key={index} className="searchresult">
-                               
                                 <a href={item.link}>{item.link}<br></br><h2>{item.title}</h2></a> 
-                                
                                 <p>{item.snippet}</p>
                             </div>
                         )})

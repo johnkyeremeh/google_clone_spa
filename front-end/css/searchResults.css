@@ -1,0 +1,57 @@
+
+.searchresult {
+    margin-left: 8px;
+}
+
+.searchresult h2 {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: normal;
+    color: rgb(29, 1, 189);
+ 
+    margin-bottom: 3px;
+}
+
+.searchresult a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #202124;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.searchresult p {
+  padding-bottom: 10px;
+  color: #4d5156;
+  line-height: 1.58;
+  font-size: 14px;
+}
+
+.searchresult p {
+    width: 625px;
+    font-size: 13px;
+    margin-top: 0px;
+    color: rgb(82, 82, 82);
+}
+
+.Pagination--button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.Pagination--button button {
+ margin: 5px;
+padding: 7px 15px;
+background-color: #f8f8f8;
+ border: 1px solid white;
+text-transform: inherit;
+color: #5f6368;
+}
+
+.Pagination--button Button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+   }

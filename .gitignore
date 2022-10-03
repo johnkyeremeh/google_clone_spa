@@ -130,3 +130,4 @@ local_settings.py
 
 #keys
 front-end/keys.js
+rptakehome/constants.py
