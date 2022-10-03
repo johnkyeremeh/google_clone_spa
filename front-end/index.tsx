@@ -16,10 +16,9 @@ const rootReducer = combineReducers({
 
   const composeEnhancers = window['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'] as typeof compose || compose;
 
-  const store = createStore(
+  export const store = createStore(
     rootReducer, 
     composeEnhancers(applyMiddleware(thunk)))
-
 
 const App = () => {
     return (
